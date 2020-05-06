@@ -1,7 +1,7 @@
 #Sleep in
 # The parameter weekday is True if it is a weekday, and the parameter vacation is 
 # True if we are on vacation. We sleep in if it is not a weekday or we're on vacation. 
-# Return True if we sleep in. wronge compared to example
+# Return True if we sleep in. 
 def sleep_in(weekday, vacation):
   if not weekday or vacation:
     return True
@@ -10,7 +10,7 @@ def sleep_in(weekday, vacation):
   elif vacation:
     return True
   else:
-    False
+    return False
 
 # monkey trouble
 #We have two monkeys, a and b, and the parameters a_smile and b_smile indicate if each is smiling. 
@@ -19,7 +19,7 @@ def sleep_in(weekday, vacation):
 def monkey_trouble(a_smile, b_smile):
   if a_smile and b_smile:
     return True
-  elif a_smile and b_smile:
+  elif not a_smile and not b_smile:
     return True
   else:
     return False
